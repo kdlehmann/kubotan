@@ -1,2 +1,2 @@
 # kubotan
-kubotan-berlin webpage
+kubotan-berlin.de webpage
