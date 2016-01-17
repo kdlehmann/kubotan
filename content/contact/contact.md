@@ -4,22 +4,16 @@ draft = true
 title = "Kontakt"
 
 +++
-Anschrift:
-Klaus-Dieter Lehmann
-Pfauenkehre 3
+Klaus-Dieter Lehmann<br/>
+Pfauenkehre 3<br/>
 12355 Berlin
 
-Mobil:
-0178 | 2118288
+Mobil: 0178 | 2118288
 
-Email:
-kdlgesunheit@gmail.com
+Email: kdlgesunheit@gmail.com
 
-Steuernummer:
-16/415/62916
+Steuernummer: 16/415/62916
 
-Identifikationsnummer nach §139b:
-57 982 041 731
+Identifikationsnummer nach §139b: 57 982 041 731
 
-Gerichtsstand:
-Berlin
+Gerichtsstand: Berlin
