@@ -2,6 +2,7 @@ baseurl = "http://kubotan-berlin.de"
 languageCode = "de-de"
 title = "Kubotan Berlin"
 canonifyUrls = "true"
+theme = "kubotan"
 
 [params]
     description = "Nahkampftraining in Berlin"
