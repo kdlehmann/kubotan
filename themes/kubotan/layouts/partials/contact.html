@@ -1,0 +1,18 @@
+{{ if isset .Site.Params "social" }}
+<section id="contact">
+<div class="contact">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-6">
+				<h2>Kontakt</h2>
+			</div>
+
+			<div class="col-lg-6">
+				{{ range where .Data.Pages "Section" "contact" | first 1 }}{{ .Content }}{{ end }}
+			</div>
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</div><!-- /.contact -->
+</section>
+{{ end }}

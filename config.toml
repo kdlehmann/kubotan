@@ -1,0 +1,12 @@
+baseurl = "http://kubotan-berlin.de"
+languageCode = "de-de"
+title = "Kubotan Berlin"
+canonifyUrls = "true"
+
+[params]
+    description = "Nahkampftraining in Berlin"
+
+[[params.social]]
+    title = "email"
+    icon = "envelope-o"
+    url = "mailto:kdlgesundheit@gmail.com"
