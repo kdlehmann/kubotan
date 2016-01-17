@@ -1,3 +1,7 @@
+env:
+  global:
+    - secure: "jrG6NF6ugp01gdFksgQ+xl7AypMk85AqiS1bsxUjj9IgmEJePebiLNQwz4TtbPA1dDGd/yZDws16m+QqdxW1N/7RF+VvvMYOCactofQ35PEYYTlUzj3f10CFHBOFXc2+C6COZkWaeL+EPxXh0Jbir9VRHDw4ZIj2r03XeXP7gkZJecXUP3gZ/gQNeGufE933RK6DRg2P/FOviT5klVQBjtF7pkWccL1ZpT8V19KmK+9Vw1uGDIxSXkTtOleUyeymHfQxIlrFfk5dHtp0p7NbgsXaamiUP/L9CZcXfCPPNi2pSNvlApyVNvZMFkAwV69ZePGjutAYZ9Abdiuaus7uLMBkd9JKI2XRa/GxA88Ra/i3GKe0DuVtAMNsV2quW/7/wpNz8jCGtL+u+REzO/KHstjzgdO6RoHtVY+vjmzZDFmn80Dotq8bkbnRVGP3fbkM3aUN+Mo7aGsVEe0GvW0NqlM0ZKo2iKKGDoTVMTuPPQNmmYc8JqDMOu31URh+69PPgFKmuIcj3sAxToM7k0dE+IJdEltyeTaLuxjXmz+eK13dn3Zx3607Ru5rCVPgtL4nZP8o6cd/uvjOyOXde+w1JNfCD32AWnRQmClMXcj/723nhul7INZi4yhrmsMAwpqrb0xUxaA+t9H6UerrqC3ZIQWw/In6397rnNTtSxAmLcc="
+    - secure: "nd+Try3UDSw0j5Ow6nJ1G2TdTOtsitF2VqEalrpdDb3HWVm++PL+Nnwdl6dpIwhuc3PMB9wH1U84yADuif4A/VGlu4nFuwlrWpLktrKwdkR2cPEemU+oydUr3yEbnadFU0yKZm0Z0ksa/2ie+1SGR3f/r+AEPSncr1kljrtbwrYgBR/eM+KAdWErjYtYj/a4OWQjMlm46I6pFBo/Hn9ikRcm02CC8mh/fhj4TKC0Xw+4zXQJrj0M7g3cMSaj+vRSPhufCt6AOG27wZZMKRyheDeZzthdxanX3cK1YvUKxSZqLSpYjjYK+VOK3nHJTa+bn+MdquaVLzlbXOKLat6hKHbNEjKAe7L9COaxgyDCwNxOLECNnV/NGxtgLRhQ3VqNSaWEuQT8MvuSh3L8aJgEa3iV+Fh8eQ0ZcVyrDEgYjqXNRQ7Xi9yl+gkLgxEfY9PLo9ZYoVY5d6b07IbynTHGBuohpeXFLiCMsdjQiY2znCX3MzWrWRvLDxrX+9hypkFgE1naAHa9lEGZq+kQiNCVaWHs/8Ii/QvqqURz7tnMFl29NX9K+XPMp2hJaOJo6ry79sEWQdS1W1MEkSBkWmLUZEz74Gv3wxbw20K8jqfVwQGAu3zJAIweHVFw/72ooV2Hg6a1Nfo/+MamJCtxIEFmoUpJVjTQDv93s2W729cPR5M="
 language: go
 go:
   - 1.5
@@ -9,3 +13,5 @@ notifications:
       - c.oelmueller@gmail.com
     on_success: always
     on_failure: always
+after_success:
+    "find public -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://ftp.strato.com/{} \;"
