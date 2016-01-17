@@ -1,0 +1,11 @@
+language: go
+go:
+  - 1.5
+install: go get -v github.com/spf13/hugo
+script: hugo
+notifications:
+  email:
+    recipients:
+      - c.oelmueller@gmail.com
+    on_success: always
+    on_failure: always
