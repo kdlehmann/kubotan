@@ -13,5 +13,5 @@ notifications:
     on_success: always
     on_failure: always
 after_success:
-  - rsync -av -e "ssh -o StrictHostKeyChecking=no -l kubotan-berlin.de -i id_rsa" public/ ssh.strato.de:kubotan/
-  - rm id_rsa
+  - rsync -av --delete -e "ssh -o StrictHostKeyChecking=no -l kubotan-berlin.de -i id_rsa" public/ ssh.strato.de:kubotan/
+  - rm -f id_rsa
