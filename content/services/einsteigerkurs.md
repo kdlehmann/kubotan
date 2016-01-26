@@ -5,11 +5,16 @@ title = "Einsteigerkurs"
 img = "einsteigerkurs.jpg"
 weight = 1
 +++
-- theoretische Grundlagen (Notwehr- & Waffenrecht und Selbstverteidigung)
-- Übersicht über Kubotanvarianten (& Kaufberatung)
-- Trageweise und Handhabung
-- Ziel- / Angriffspunkte
-- Der Stand und die "Kampfhaltung"
-- Techniken im Stand und Befreiungstechniken (Festhalten / Würgen)
-- Anwendung des Kubotans in der Bodenlage
-Dauer 2 Stunden. Kosten 30€ pro Person.
+### Inhalte des Einsteigerkurses sind:
+ - theoretische Grundlagen (Wissen zu Notwehrhandlung, Verhaltensregeln, Selbstkontrolle),
+ - Vermeidung gefährlicher Angriffe
+ - Der Stand und die "Kampfhaltung"
+ - Techniken im Stand und Befreiungstechniken (Festhalten / Würgen) 
+ - Trageweise und Handhabung des Kubotan
+ - Wirkungsvolle Abwehr mit dem Kubotan 
+ - Verteidigung gegen Umklammern und Festhalten
+
+Dauer 2 Stunden.
+Kosten 30€ pro Person. Das Seminar ist auf 10 Personen begrenzt und findet ab 6 Teilnehmern statt. Der Kurspreis beinhaltet nicht die Raummiete.
+
+Personaltraining: 72h pro Stunde
