@@ -1,6 +1,3 @@
-before_install:
-  - openssl aes-256-cbc -K $encrypted_671dc0cb2713_key -iv $encrypted_671dc0cb2713_iv -in id_rsa.enc -out id_rsa -d
-  - chmod 400 id_rsa
 language: go
 go:
   - 1.8
@@ -10,7 +7,6 @@ notifications:
   email:
     recipients:
       - c.oelmueller@gmail.com
-      - anja@anjeve.de
     on_success: always
     on_failure: always
 deploy:
