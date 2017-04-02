@@ -15,7 +15,7 @@ error_n_exit() {
 [ -d "$TRAVIS_BUILD_DIR/public" ] && tar cvzf $TARBALL -C $TRAVIS_BUILD_DIR/public .
 
 # upload
-scp -i id_rsa $TARBALL $TARGETUSER@$TARGETHOST:
+scp -o StrictHostKeyChecking=no -i id_rsa $TARBALL $TARGETUSER@$TARGETHOST:
 if [ $? -ne 0 ];then
     error_n_exit "failed to upload tarball to $TARGETHOST..."
 fi

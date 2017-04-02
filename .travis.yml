@@ -18,5 +18,5 @@ deploy:
   script: scripts/deploy.sh
   on:
     branch: master
-after_success:
+after_deploy:
   - rm -f id_rsa
