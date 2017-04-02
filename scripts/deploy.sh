@@ -4,7 +4,7 @@ TARBALL=kubotan-$(date +%s).tar.gz
 TARGETHOST=46.38.249.61
 TARGETUSER=sub11429_64
 
-function error_n_exit() {
+error_n_exit() {
     msg=$1
     rm -f id_rsa
     echo $msg
@@ -12,7 +12,7 @@ function error_n_exit() {
 }
 
 # tar build
-[-d "$TRAVIS_BUILD_DIR/public" ] && tar cvzf $TARBALL -C $TRAVIS_BUILD_DIR/public .
+[ -d "$TRAVIS_BUILD_DIR/public" ] && tar cvzf $TARBALL -C $TRAVIS_BUILD_DIR/public .
 
 # upload
 scp -i id_rsa $TARBALL $TARGETUSER@$TARGETHOST:
