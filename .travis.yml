@@ -13,6 +13,10 @@ notifications:
       - anja@anjeve.de
     on_success: always
     on_failure: always
+deploy:
+  provider: script
+  script: scripts/deploy.sh
+  on:
+    branch: master
 after_success:
-  - rsync -av -n --delete -e "ssh -o StrictHostKeyChecking=no -l sub11429_64 -i id_rsa" public/ 46.38.249.61:httpdocs/kubotan/
   - rm -f id_rsa
