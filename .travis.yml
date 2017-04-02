@@ -14,5 +14,5 @@ notifications:
     on_success: always
     on_failure: always
 after_success:
-  - rsync -av -n --delete -e "ssh -o StrictHostKeyChecking=no -l 46.38.249.61 -i id_rsa" public/ 46.38.249.61:httpdocs/kubotan/
+  - rsync -av -n --delete -e "ssh -o StrictHostKeyChecking=no -l sub11429_64 -i id_rsa" public/ 46.38.249.61:httpdocs/kubotan/
   - rm -f id_rsa
